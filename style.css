@@ -2,11 +2,12 @@ body{
     background: linear-gradient(rgb(8 , 8 ,30%, orangered));
     justify-content: center;
     align-items: center;
-    display: flex;
+  
+    
 }
 .box,.box2,.box3{
     justify-content: center;
-    display: flex;
+ display: grid;
     align-items: center;
     border-radius: 10px;
     
@@ -17,6 +18,12 @@ body{
     display: grid;
     place-items: center;
     background-color: blue;
+    height: 800px;
+    grid-template-columns: repeat (4, 1fr);
+
+
+
+
     
 
 }
