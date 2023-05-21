@@ -13,3 +13,13 @@ body{
     padding: 25px;
     box-shadow: 0 0 10px;
 }
+.cards, .card, .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    height: 100px;
+    width: 100px;
+    justify-content: space-between;
+}
