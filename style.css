@@ -5,37 +5,3 @@ body{
   
     
 }
-.box,.box2,.box3{
-    justify-content: center;
- display: grid;
-    align-items: center;
-    border-radius: 10px;
-    
-
-}
-.flex-containers{
-    padding-bottom: 5px;
-    display: grid;
-    place-items: center;
-    background-color: blue;
-    height: 800px;
-    grid-template-columns: repeat (4, 1fr);
-
-
-
-
-    
-
-}
-.heading{
-    text-align: center;
-    font-family: sans-serif;
-}
-.box2 img{
-    height: 90px;
-    width: 70px;
-    border-radius: 15px;
-    place-items: center;
-    padding: 10px;
-    grid-template-columns: repeat(4, 1fr);
-}
