@@ -1,7 +1,3 @@
 body{
-    background: linear-gradient(rgb(8 , 8 ,30%, orangered));
-    justify-content: center;
-    align-items: center;
-  
-    
+    display: flex;
 }
