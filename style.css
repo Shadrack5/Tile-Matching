@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(rgb(8 , 8 ,30%, orangered));
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.box,.box2,.box3{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    
+
+}
+.flex-container{
+    height: 300px;
+    width: 300px;
+    background: orchid;
+}
