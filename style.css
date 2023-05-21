@@ -12,8 +12,23 @@ body{
     
 
 }
-.flex-container{
-    height: 300px;
-    width: 300px;
-    background: orchid;
+.flex-containers{
+    padding-bottom: 5px;
+    display: grid;
+    place-items: center;
+    background-color: blue;
+    
+
+}
+.heading{
+    text-align: center;
+    font-family: sans-serif;
+}
+.box2 img{
+    height: 90px;
+    width: 70px;
+    border-radius: 15px;
+    place-items: center;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
 }
