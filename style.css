@@ -4,7 +4,23 @@
     box-sizing: border-box;
 }
 body{
-    
+    background-color: #f2f2f2;
+}
+.head{
+    max-width: 480px;
+    border: 2px solid #a6a6a6;
+    margin: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+.score{
+    margin-top: 10px;
 }
 img{
     height: 100px;
@@ -15,6 +31,8 @@ img{
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: iren;
+    margin: auto;
+    padding: 20px;
 }
 .call div{
     height: 100px;
