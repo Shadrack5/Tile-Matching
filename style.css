@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color: #f2f2f2;
+    background-color: #ef9b9b;
   }
   
   .head {
@@ -95,4 +95,11 @@
       height: 170px;
     }
   }
-  
+  .start-button{
+    text-align: center;
+    height: 70px;
+    width: 100px;
+    margin-left: 900px;
+    border: 10px solid orangered;
+    background-color: aliceblue;
+  }

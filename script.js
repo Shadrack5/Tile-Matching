@@ -1,13 +1,25 @@
+
 const card = document.querySelectorAll('.cell');
 const front = document.querySelectorAll('.front');
 const container = document.querySelector('.container');
 const score = document.querySelector('.score span');
 const movesDisplay = document.querySelector('.moves span');
+const startButton = document.querySelector('.start-button');
+const timerDisplay = document.querySelector('.timer');
+var start = document.querySelector('start')
 
 let moves = 0;
+let seconds = 0;
+let minutes = 0;
+let timerInterval;
 
-suffleImage();
-clicking();
+startButton.addEventListener('click', startGame);
+
+function startGame() {
+  startButton.disabled = true; 
+  suffleImage();
+  startTimer();
+}
 
 function suffleImage() {
   card.forEach(c => {
@@ -28,10 +40,10 @@ function clicking() {
       front[i].classList.add('flip');
       const flippedCard = document.querySelectorAll('.flip');
 
-      if (flippedCard.length == 2) {
+      if (flippedCard.length === 2) {
         container.style.pointerEvents = 'none';
 
-        setInterval(() => {
+        setTimeout(() => {
           container.style.pointerEvents = 'all';
         }, 1000);
 
@@ -45,7 +57,7 @@ function clicking() {
 }
 
 function match(cardOne, cardTwo) {
-  if (cardOne.dataset.index == cardTwo.dataset.index) {
+  if (cardOne.dataset.index === cardTwo.dataset.index) {
     score.innerHTML = parseInt(score.innerHTML) + 1;
     cardOne.classList.remove('flip');
     cardTwo.classList.remove('flip');
@@ -58,3 +70,18 @@ function match(cardOne, cardTwo) {
     }, 1000);
   }
 }
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    seconds += 1;
+    if (seconds >= 60) {
+      minutes += 1;
+      seconds = 0;
+    }
+    const secondsValue = seconds < 10 ? `0${seconds}` : seconds;
+    const minutesValue = minutes < 10 ? `0${minutes}` : minutes;
+    timerDisplay.textContent = `${minutesValue}:${secondsValue}`;
+  }, 1000);
+}
+
+clicking();
