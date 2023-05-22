@@ -19,10 +19,16 @@
     margin-top: 20px;
     font-family: "Orbitron", sans-serif;
     color: #333;
+    background-color: bisque;
   }
   
   .score {
     margin-top: 10px;
+
+  }
+  #timer{
+    font-size: 30px;
+    padding: 20px;
   }
   
   .container {
