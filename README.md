@@ -18,6 +18,7 @@
 shadrack5.github.io/Tile-Matching/
 
 ## Design skecth
+![Screenshot from 2023-05-24 11-54-29](https://github.com/Shadrack5/Tile-Matching/assets/132663563/63d88b1a-e811-466d-a38a-f254e0679fdb)
 
 
 ## LICENSE
