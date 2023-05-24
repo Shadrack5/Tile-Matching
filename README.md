@@ -1,4 +1,4 @@
-## Portfolio
+## Tile Matching Game Board
 
 ## Author  -  Shadrack Kibet
 
